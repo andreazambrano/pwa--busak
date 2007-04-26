@@ -42,4 +42,6 @@ export { ContentiComponent } from "./contenti/contenti.component";
 export { ContentboxComponent } from "./contentbox/contentbox.component";
 export { ContentpanelComponent } from "./contentpanel/contentpanel.component";
 export { WrapperComponent } from "./wrapper/wrapper.component";
+export { ModalegresoComponent } from "./modalegreso/modalegreso.component";
+export { ModalingresoComponent } from "./modalingreso/modalingreso.component";
 

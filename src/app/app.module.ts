@@ -109,6 +109,10 @@ import { ContentComponent } from './components/content/content.component';
 import { ContentiComponent } from './components/contenti/contenti.component';
 import { ContentboxComponent } from './components/contentbox/contentbox.component';
 import { ContentpanelComponent } from './components/contentpanel/contentpanel.component';
+import { ModalegresoComponent } from './components/modalegreso/modalegreso.component';
+import { ModalingresoComponent } from './components/modalingreso/modalingreso.component';
+import { ModalnewcategoryComponent } from './components/modalnewcategory/modalnewcategory.component';
+import { ModalcategorylistComponent } from './components/modalcategorylist/modalcategorylist.component';
 // import { ActivityTrackerPipe } from './providers/activity-tracker.pipe';
 
 
@@ -180,6 +184,10 @@ import { ContentpanelComponent } from './components/contentpanel/contentpanel.co
     ContentiComponent,
     ContentboxComponent,
     ContentpanelComponent,
+    ModalegresoComponent,
+    ModalingresoComponent,
+    ModalnewcategoryComponent,
+    ModalcategorylistComponent,
     // ActivityTrackerPipe,
 
   ],
