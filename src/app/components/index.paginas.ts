@@ -33,7 +33,13 @@ export { SuccesscancelbookComponent } from "./successcancelbook/successcancelboo
 export { AssbookComponent } from "./assbook/assbook.component";
 export { DeletevalidationComponent } from "./deletevalidation/deletevalidation.component";
 export { MainmenuComponent } from "./mainmenu/mainmenu.component";
-export { SuccessdeletevalidationComponent } from "./successdeletevalidation/successdeletevalidation.component";
 export { SuccessvalidationComponent } from "./successvalidation/successvalidation.component";
-
+export { SuccessdeletevalidationComponent } from "./successdeletevalidation/successdeletevalidation.component";
+export { ModalwelcomeComponent } from "./modalwelcome/modalwelcome.component";
+export { LayoutComponent } from "./layout/layout.component";
+export { ContentComponent } from "./content/content.component";
+export { ContentiComponent } from "./contenti/contenti.component";
+export { ContentboxComponent } from "./contentbox/contentbox.component";
+export { ContentpanelComponent } from "./contentpanel/contentpanel.component";
+export { WrapperComponent } from "./wrapper/wrapper.component";
 

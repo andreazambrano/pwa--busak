@@ -59,6 +59,7 @@ import {ScrollTopService} from './services/scroll-top.service';
 import {UserWService} from './services/user-w.service';
 
 import {IpbucketService} from './services/ipbucket.service';
+// import {ActivityTrackerService} from './services/activity-tracker.service';
 
 
 
@@ -97,6 +98,18 @@ import { SuccesscancelbookComponent } from './components/successcancelbook/succe
 import { DeletevalidationComponent } from './components/deletevalidation/deletevalidation.component';
 import { SuccessdeletevalidationComponent } from './components/successdeletevalidation/successdeletevalidation.component';
 import { MainmenuComponent } from './components/mainmenu/mainmenu.component';
+import { SiderightComponent } from './components/sideright/sideright.component';
+import { TopbarComponent } from './components/topbar/topbar.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { MobilemenuComponent } from './components/mobilemenu/mobilemenu.component';
+import { WrapperComponent } from './components/wrapper/wrapper.component';
+import { ModalwelcomeComponent } from './components/modalwelcome/modalwelcome.component';
+import { LayoutComponent } from './components/layout/layout.component';
+import { ContentComponent } from './components/content/content.component';
+import { ContentiComponent } from './components/contenti/contenti.component';
+import { ContentboxComponent } from './components/contentbox/contentbox.component';
+import { ContentpanelComponent } from './components/contentpanel/contentpanel.component';
+// import { ActivityTrackerPipe } from './providers/activity-tracker.pipe';
 
 
 // import { HttpClientModule } from '@angular/common/http';
@@ -156,6 +169,18 @@ import { MainmenuComponent } from './components/mainmenu/mainmenu.component';
     DeletevalidationComponent,
     SuccessdeletevalidationComponent,
     MainmenuComponent,
+    SiderightComponent,
+    TopbarComponent,
+    HeroComponent,
+    MobilemenuComponent,
+    WrapperComponent,
+    ModalwelcomeComponent,
+    LayoutComponent,
+    ContentComponent,
+    ContentiComponent,
+    ContentboxComponent,
+    ContentpanelComponent,
+    // ActivityTrackerPipe,
 
   ],
   imports: [
@@ -194,6 +219,7 @@ import { MainmenuComponent } from './components/mainmenu/mainmenu.component';
     ScrollTopService,
     UserWService,
     IpbucketService
+    // ActivityTrackerService
       ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

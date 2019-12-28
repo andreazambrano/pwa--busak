@@ -37,12 +37,19 @@ import {
 	DeletevalidationComponent,
 	MainmenuComponent,
 	SuccessdeletevalidationComponent,
+	ModalwelcomeComponent,
+	LayoutComponent,
+	ContentComponent,
+	ContentiComponent,
+	ContentboxComponent,
+	ContentpanelComponent,
+	WrapperComponent,
 	}from "./components/index.paginas";
 
 	import { AuthGuard } from './guards/auth.guard';
 
 const app_routes: Routes = [
-	{path:'',component:MainmenuComponent},
+	{path:'',component:WrapperComponent},
 	{path:'alltixs',component:AlltixsComponent},
 	{path:'mytixs',component:MyTixsComponent, canActivate:[AuthGuard]},
 	{path:'login',component:LoginComponent},
@@ -79,6 +86,13 @@ const app_routes: Routes = [
 	{path:'deletevalidation',component:DeletevalidationComponent},
 	{path:'mainmenu',component:MainmenuComponent},
 	{path:'successdeletevalidation',component:SuccessdeletevalidationComponent},
+	{path:'modalwelcome',component:ModalwelcomeComponent},
+	{path:'layout',component:LayoutComponent},
+	{path:'content',component:ContentComponent},
+	{path:'contenti',component:ContentiComponent},
+	{path:'contentbox',component:ContentboxComponent},
+	{path:'contentpanel',component:ContentpanelComponent},
+	{path:'wrapper',component:WrapperComponent},
 	{path:'**',pathMatch:'full',redirectTo:''}
 	];
 	export const app_routing = RouterModule.forRoot(app_routes);
