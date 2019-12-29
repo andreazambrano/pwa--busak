@@ -113,7 +113,7 @@ import { ModalegresoComponent } from './components/modalegreso/modalegreso.compo
 import { ModalingresoComponent } from './components/modalingreso/modalingreso.component';
 import { ModalnewcategoryComponent } from './components/modalnewcategory/modalnewcategory.component';
 import { ModalcategorylistComponent } from './components/modalcategorylist/modalcategorylist.component';
-// import { ActivityTrackerPipe } from './providers/activity-tracker.pipe';
+
 
 
 // import { HttpClientModule } from '@angular/common/http';
@@ -188,7 +188,6 @@ import { ModalcategorylistComponent } from './components/modalcategorylist/modal
     ModalingresoComponent,
     ModalnewcategoryComponent,
     ModalcategorylistComponent,
-    // ActivityTrackerPipe,
 
   ],
   imports: [
