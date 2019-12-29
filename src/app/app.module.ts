@@ -113,6 +113,7 @@ import { ModalegresoComponent } from './components/modalegreso/modalegreso.compo
 import { ModalingresoComponent } from './components/modalingreso/modalingreso.component';
 import { ModalnewcategoryComponent } from './components/modalnewcategory/modalnewcategory.component';
 import { ModalcategorylistComponent } from './components/modalcategorylist/modalcategorylist.component';
+import { CurrencyselectorComponent } from './components/currencyselector/currencyselector.component';
 
 
 
@@ -188,6 +189,7 @@ import { ModalcategorylistComponent } from './components/modalcategorylist/modal
     ModalingresoComponent,
     ModalnewcategoryComponent,
     ModalcategorylistComponent,
+    CurrencyselectorComponent,
 
   ],
   imports: [

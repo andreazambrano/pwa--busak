@@ -25544,6 +25544,20 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   background-position: center left;
   background-repeat: no-repeat;
 }
+.onboarding-modal .onboarding-side-by-side .onboarding-content.with-gradientegreso {
+  padding: 70px 70px 60px;
+  background-image: url(../img/onboarding-gradient-veregreso.png);
+  background-size: auto 100%;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+.onboarding-modal .onboarding-side-by-side .onboarding-content.with-gradientingreso {
+  padding: 70px 70px 60px;
+  background-image: url(../img/onboarding-gradient-veringreso.png);
+  background-size: auto 100%;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
 
 .onboarding-modal .onboarding-slide .onboarding-side-by-side .onboarding-media {
   padding-bottom: 60px;

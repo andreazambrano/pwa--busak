@@ -46,6 +46,7 @@ import {
 	ValidationComponent,
 	ValistComponent,
 	WrapperComponent,
+	CurrencyselectorComponent,
 	}from "./components/index.paginas";
 
 	import { AuthGuard } from './guards/auth.guard';
@@ -97,6 +98,8 @@ const app_routes: Routes = [
 	{path:'wrapper',component:WrapperComponent},
 	{path:'modalegreso',component:ModalegresoComponent},
 	{path:'modalingreso',component:ModalingresoComponent},
+	{path:'currencyselector',component:CurrencyselectorComponent},
+	
 	{path:'**',pathMatch:'full',redirectTo:''}
 	];
 	export const app_routing = RouterModule.forRoot(app_routes);
