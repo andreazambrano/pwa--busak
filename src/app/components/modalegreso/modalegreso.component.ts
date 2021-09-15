@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {DataApiService} from '../../services/data-api.service';
+import { CategoryInterface } from '../../models/category-interface'; 
 @Component({
   selector: 'app-modalegreso',
   templateUrl: './modalegreso.component.html',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalegresoComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private dataApi: DataApiService
+    ) { }
 
+  public categories:CategoryInterface;
+ getCategories(){
+        this.dataApi
+        .getCategories()
+        .subscribe((categories: CategoryInterface) => (this.categories=categories));
+    }
   ngOnInit() {
+  	this.getCategories();
   }
 
 }

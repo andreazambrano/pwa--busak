@@ -5,15 +5,15 @@
                       <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span class="close-label">Cancelar</span><span class="os-icon os-icon-close"></span></button>
                       <div class="onboarding-side-by-side">
                         <div class="onboarding-media">
-                          <img alt="" src="assets/assetsbusak/img/bigiconpiggyegreso.png" width="200px">
+                          <img alt="" src="assets/assetsbusak/img/bigiconpiggyegreso.png"style="width: 80px;">
                         </div>
                         <div class="onboarding-content with-gradient" >
                           <h4 class="onboarding-title">
-                            Registremos un nuevo egreso
+                            Nuevo egreso
                           </h4>
-                          <div class="onboarding-text">
+            <!--               <div class="onboarding-text">
                             Indique el monto y la categoria a la cual desea asociar el egreso.
-                          </div>
+                          </div> -->
                           <form>
                             <div class="row">
                               <div class="col-sm-4">
@@ -27,15 +27,9 @@
                               </div>
                               <div class="col-sm-6">
                                 <div class="form-group">
-                                  <label for="">Categoria</label><select class="form-control">
-                                    <option>
-                                      Comida
-                                    </option>
-                                    <option>
-                                      Recreacion
-                                    </option>
-                                    <option>
-                                      Ropa y Calzado
+                                  <label for="">Tipo de egreso</label><select class="form-control">
+                                    <option *ngFor="let category of categories">
+                                      {{category.name}}
                                     </option>
                                   </select>
                                 </div>

@@ -114,7 +114,7 @@
                   <!--START - Top Selling Chart-->
                   <div class="element-wrapper">
                     <h6 class="element-header">
-                      A donde va mi dinero...
+                      Volúmen de ventas por producto
                     </h6>
                     <div class="element-box">
                       <div class="el-chart-w">
@@ -182,15 +182,16 @@
                       <div class="element-wrapper compact pt-4">
                           <div class="element-actions">
                             <form class="form-inline justify-content-sm-end">
-                              <label class="smaller" for="">Mostrar:</label><select class="form-control form-control-sm form-control-faded">
-                                <option value="Pending">
-                                  Egresos
+                              <label class="smaller" for="">Mostrar:</label>
+                              <select class="form-control form-control-sm form-control-faded" (click)="setType()" [(ngModel)]="transactionType"  [ngModelOptions]="{standalone: true}">
+                                <option  value="all">
+                                  Todo
                                 </option>
-                                <option value="Active">
+                                <option value="entry">
                                   Ingresos 
                                 </option>
-                                <option value="Cancelled">
-                                  Todo
+                                <option value="egress">
+                                  Egresos
                                 </option>
                               </select>
                             </form>
@@ -200,120 +201,29 @@
                           </h6>
                           <div class="element-box-tp">
                             <table class="table table-clean">
-                              <tr>
-                                <td>
+                              <tr *ngFor="let transaction of transactions" [hidden]="egress && !all">
+                                <td >
                                   <div class="value">
-                                    Tomates
+                                    <span *ngFor="let item of transaction.car">
+                                      <div  *ngFor="let tix of tixs">
+                                        <div [hidden]="item.idTix!=tix.id">  
+                                       {{item.quantity}} x {{tix.name}}
+                                        </div>  
+                                      </div>  
+                                    </span> 
                                   </div>
-                                  <span class="sub-value">comida</span>
+                                  <span class="sub-value">{{transaction.type}}</span>
                                 </td>
                                 <td class="text-right">
-                                  <div class="value text-danger">
-                                    -$ 0.7
+                                  <div class="value text-success" >
+                                  {{transaction.currency}}  {{transaction.amount}}
                                   </div>
                                   <span class="sub-value">12 Feb 2018</span>
                                 </td>
                               </tr>
-                              <tr>
-                                <td>
-                                  <div class="value">
-                                    Dunkin Donuts
-                                  </div>
-                                  <span class="sub-value">Food & Restaurants</span>
-                                </td>
-                                <td class="text-right">
-                                  <div class="value text-danger">
-                                    -$7.15
-                                  </div>
-                                  <span class="sub-value">10 Feb 2018</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class="value">
-                                    Refund from Sephora
-                                  </div>
-                                  <span class="sub-value">Health & Beauty</span>
-                                </td>
-                                <td class="text-right">
-                                  <div class="value text-success">
-                                    $128.11
-                                  </div>
-                                  <span class="sub-value">10 Feb 2018</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class="value">
-                                    Amazon Store
-                                  </div>
-                                  <span class="sub-value">Books</span>
-                                </td>
-                                <td class="text-right">
-                                  <div class="value text-danger">
-                                    -$28.34
-                                  </div>
-                                  <span class="sub-value">12 Feb 2018</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class="value">
-                                    Dunkin Donuts
-                                  </div>
-                                  <span class="sub-value">Food & Restaurants</span>
-                                </td>
-                                <td class="text-right">
-                                  <div class="value text-danger">
-                                    -$7.15
-                                  </div>
-                                  <span class="sub-value">10 Feb 2018</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class="value">
-                                    Refund from Google Store
-                                  </div>
-                                  <span class="sub-value">Health & Beauty</span>
-                                </td>
-                                <td class="text-right">
-                                  <div class="value text-success">
-                                    $15.23
-                                  </div>
-                                  <span class="sub-value">9 Feb 2018</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class="value">
-                                    Amazon Store
-                                  </div>
-                                  <span class="sub-value">Books</span>
-                                </td>
-                                <td class="text-right">
-                                  <div class="value text-danger">
-                                    -$28.34
-                                  </div>
-                                  <span class="sub-value">8 Feb 2018</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class="value">
-                                    Dunkin Donuts
-                                  </div>
-                                  <span class="sub-value">Food & Restaurants</span>
-                                </td>
-                                <td class="text-right">
-                                  <div class="value text-danger">
-                                    -$7.15
-                                  </div>
-                                  <span class="sub-value">8 Feb 2018</span>
-                                </td>
-                              </tr>
+                            
                             </table>
-                            <a class="centered-load-more-link" href="#"><span>Load More Messages</span></a>
+                            <a class="centered-load-more-link" href="#"><span>Ver más</span></a>
                           </div>
                         </div>
                     

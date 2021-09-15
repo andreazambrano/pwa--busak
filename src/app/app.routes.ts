@@ -52,7 +52,8 @@ import {
 	import { AuthGuard } from './guards/auth.guard';
 
 const app_routes: Routes = [
-	{path:'',component:WrapperComponent},
+	{path:'',pathMatch:'full',redirectTo:'login'},
+	// {path:'',component:WrapperComponent},
 	{path:'alltixs',component:AlltixsComponent},
 	{path:'mytixs',component:MyTixsComponent, canActivate:[AuthGuard]},
 	{path:'login',component:LoginComponent},
@@ -99,8 +100,8 @@ const app_routes: Routes = [
 	{path:'modalegreso',component:ModalegresoComponent},
 	{path:'modalingreso',component:ModalingresoComponent},
 	{path:'currencyselector',component:CurrencyselectorComponent},
+	{path:'**',pathMatch:'full',redirectTo:''}	
 	
-	{path:'**',pathMatch:'full',redirectTo:''}
 	];
 	export const app_routing = RouterModule.forRoot(app_routes);
 
