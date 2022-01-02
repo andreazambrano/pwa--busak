@@ -81,7 +81,7 @@ import { WrapperComponent } from './components/wrapper/wrapper.component';
 @NgModule({
   declarations: [
     AppComponent,
-    
+    CatalogComponent
     ContentComponent,
     ContentiComponent,
     ContentboxComponent,
