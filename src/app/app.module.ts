@@ -52,6 +52,7 @@ import {MatTableModule} from '@angular/material/table';
 
 import { CatalogComponent,DialogOverviewExampleDialog } from './components/catalog/catalog.component';
 
+import { CurrencyselectorComponent } from './components/currencyselector/currencyselector.component';
 import { ContentComponent } from './components/content/content.component';
 import { ContentiComponent } from './components/contenti/contenti.component';
 import { ContentboxComponent } from './components/contentbox/contentbox.component';
@@ -65,6 +66,7 @@ import { ModalingresoComponent } from './components/modalingreso/modalingreso.co
 import { ModalnewcategoryComponent } from './components/modalnewcategory/modalnewcategory.component';
 import { ModalwelcomeComponent } from './components/modalwelcome/modalwelcome.component';
 import { SiderightComponent } from './components/sideright/sideright.component';
+import { SideleftComponent } from './components/sideleft/sideleft.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { WrapperComponent } from './components/wrapper/wrapper.component';
@@ -85,6 +87,7 @@ import { WrapperComponent } from './components/wrapper/wrapper.component';
     ContentComponent,
     ContentiComponent,
     ContentboxComponent,
+    CurrencyselectorComponent,
     ConfirmEqualValidatorDirective,
     DialogOverviewExampleDialog,
     LayoutComponent,
@@ -97,6 +100,7 @@ import { WrapperComponent } from './components/wrapper/wrapper.component';
     ModalcategorylistComponent,
     ModalwelcomeComponent,
     SiderightComponent,
+    SideleftComponent,
     SignupComponent,
     TopbarComponent,
     WrapperComponent,
