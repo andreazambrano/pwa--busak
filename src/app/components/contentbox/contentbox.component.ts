@@ -11,7 +11,7 @@ import { TixInterface } from '../../models/tix-interface';
 export class ContentboxComponent implements OnInit {
 
    constructor(
-    private dataApi: DataApiService
+    private dataApi: DataApiService,
   	) { }
   public transactions:TransactionInterface;
   public tixs:TransactionInterface;
@@ -56,7 +56,7 @@ getAllTixs(){
         .subscribe((transactions: TransactionInterface) => (this.transactions=transactions));
     }
   ngOnInit() {
-  	this.getTransactions();
+  
   	this.getAllTixs();
   }
 }

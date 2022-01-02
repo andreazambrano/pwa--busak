@@ -22,38 +22,8 @@ import { FilePickerModule } from  '../assets/file-picker/src/public_api';
 
 //COMPONENTS
 
-import { CatalogComponent,DialogOverviewExampleDialog } from './components/catalog/catalog.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { TopTixsComponent } from './components/top-tixs/top-tixs.component';
-import { SliderHomeComponent } from './components/slider-home/slider-home.component';
-import { PreFooterComponent } from './components/pre-footer/pre-footer.component';
-import { MyTixsComponent } from './components/my-tixs/my-tixs.component';
-import { LoginComponent } from './components/login/login.component';
-import { PartnersComponent } from './components/partners/partners.component';
-import { SideleftComponent } from './components/sideleft/sideleft.component';
-import { AffiliatesComponent } from './components/affiliates/affiliates.component';
-import { PartnerDetailComponent } from './components/partner-detail/partner-detail.component';
-import { AffiliateDetailComponent } from './components/affiliate-detail/affiliate-detail.component';
-import { TixDetailComponent } from './components/tix-detail/tix-detail.component';
-import { SignupComponent } from './components/signup/signup.component';
-import { AlltixsComponent } from './components/alltixs/alltixs.component';
-import { NewMemberComponent } from './components/new-member/new-member.component';
-import { ComingComponent } from './components/coming/coming.component';
-import { AffiliateComponent } from './components/new-member/affiliate/affiliate.component';
-import { PartnerComponent } from './components/new-member/partner/partner.component';
-import { ProfileComponent } from './components/profile/profile.component';
-import { AddtixsComponent } from './components/addtixs/addtixs.component';
-import { BookingComponent } from './components/booking/booking.component';
-import { AlltixslistComponent } from './components/alltixslist/alltixslist.component';
-import { AlltixsleftComponent } from './components/alltixsleft/alltixsleft.component';
-import { AboutComponent } from './components/about/about.component';
-
-
 //SERVICES
 import {TixsService} from './services/tixs.service';
-import {ProductInfoService} from './services/product-info.service';
-import {CarService} from './services/car.service';
 import {DataApiService} from './services/data-api.service';
 import {ScrollTopService} from './services/scroll-top.service';
 import {UserWService} from './services/user-w.service';
@@ -79,41 +49,25 @@ import {MatNativeDateModule} from '@angular/material';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatTableModule} from '@angular/material/table';
-import { TreksComponent } from './components/treks/treks.component';
-import { NavComponent } from './components/nav/nav.component';
-import { BookdetailComponent } from './components/bookdetail/bookdetail.component';
-import { ContactoComponent } from './components/contacto/contacto.component';
-import { ValidationComponent } from './components/validation/validation.component';
-import { SuccessbookComponent } from './components/successbook/successbook.component';
-import { CheckoutComponent } from './components/checkout/checkout.component';
-import { SuccessvalidationComponent } from './components/successvalidation/successvalidation.component';
-import { ValistComponent } from './components/valist/valist.component';
-import { TreklistComponent } from './components/treklist/treklist.component';
-import { TrekeditComponent } from './components/trekedit/trekedit.component';
-import { AssbookComponent } from './components/assbook/assbook.component';
-import { SuccessaComponent } from './components/successa/successa.component';
-import { SuccesscontactComponent } from './components/successcontact/successcontact.component';
-import { CancelbookComponent } from './components/cancelbook/cancelbook.component';
-import { SuccesscancelbookComponent } from './components/successcancelbook/successcancelbook.component';
-import { DeletevalidationComponent } from './components/deletevalidation/deletevalidation.component';
-import { SuccessdeletevalidationComponent } from './components/successdeletevalidation/successdeletevalidation.component';
-import { MainmenuComponent } from './components/mainmenu/mainmenu.component';
-import { SiderightComponent } from './components/sideright/sideright.component';
-import { TopbarComponent } from './components/topbar/topbar.component';
-import { HeroComponent } from './components/hero/hero.component';
-import { MobilemenuComponent } from './components/mobilemenu/mobilemenu.component';
-import { WrapperComponent } from './components/wrapper/wrapper.component';
-import { ModalwelcomeComponent } from './components/modalwelcome/modalwelcome.component';
-import { LayoutComponent } from './components/layout/layout.component';
+
+import { CatalogComponent,DialogOverviewExampleDialog } from './components/catalog/catalog.component';
+
 import { ContentComponent } from './components/content/content.component';
 import { ContentiComponent } from './components/contenti/contenti.component';
 import { ContentboxComponent } from './components/contentbox/contentbox.component';
-import { ContentpanelComponent } from './components/contentpanel/contentpanel.component';
+import { LayoutComponent } from './components/layout/layout.component';
+import { LoginComponent } from './components/login/login.component';
+import { MainmenuComponent } from './components/mainmenu/mainmenu.component';
+import { MobilemenuComponent } from './components/mobilemenu/mobilemenu.component';
+import { ModalcategorylistComponent } from './components/modalcategorylist/modalcategorylist.component';
 import { ModalegresoComponent } from './components/modalegreso/modalegreso.component';
 import { ModalingresoComponent } from './components/modalingreso/modalingreso.component';
 import { ModalnewcategoryComponent } from './components/modalnewcategory/modalnewcategory.component';
-import { ModalcategorylistComponent } from './components/modalcategorylist/modalcategorylist.component';
-import { CurrencyselectorComponent } from './components/currencyselector/currencyselector.component';
+import { ModalwelcomeComponent } from './components/modalwelcome/modalwelcome.component';
+import { SiderightComponent } from './components/sideright/sideright.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { TopbarComponent } from './components/topbar/topbar.component';
+import { WrapperComponent } from './components/wrapper/wrapper.component';
 
 
 
@@ -127,70 +81,25 @@ import { CurrencyselectorComponent } from './components/currencyselector/currenc
 @NgModule({
   declarations: [
     AppComponent,
-    CatalogComponent,
-    HeaderComponent,
-    FooterComponent,
-    DialogOverviewExampleDialog,
-    TopTixsComponent,
-    SliderHomeComponent,
-    PreFooterComponent,
-    MyTixsComponent,
-    LoginComponent,
-    PartnersComponent,
-    SideleftComponent,
-    AffiliatesComponent,
-    PartnerDetailComponent,
-    AffiliateDetailComponent,
-    TixDetailComponent,
-    SignupComponent,
-    AlltixsComponent,
-    ConfirmEqualValidatorDirective,
-    NewMemberComponent,
-    ComingComponent,
-    AffiliateComponent,
-    PartnerComponent,
-    ProfileComponent,
-    AddtixsComponent,
-    BookingComponent,
-    AlltixslistComponent,
-    AlltixsleftComponent,
-    AboutComponent,
-    TreksComponent,
-    NavComponent,
-    BookdetailComponent,
-    ContactoComponent,
-    ValidationComponent,
-    SuccessbookComponent,
-    CheckoutComponent,
-    SuccessvalidationComponent,
-    ValistComponent,
-    TreklistComponent,
-    TrekeditComponent,
-    AssbookComponent,
-    SuccessaComponent,
-    SuccesscontactComponent,
-    CancelbookComponent,
-    SuccesscancelbookComponent,
-    DeletevalidationComponent,
-    SuccessdeletevalidationComponent,
-    MainmenuComponent,
-    SiderightComponent,
-    TopbarComponent,
-    HeroComponent,
-    MobilemenuComponent,
-    WrapperComponent,
-    ModalwelcomeComponent,
-    LayoutComponent,
+    
     ContentComponent,
     ContentiComponent,
     ContentboxComponent,
-    ContentpanelComponent,
+    ConfirmEqualValidatorDirective,
+    DialogOverviewExampleDialog,
+    LayoutComponent,
+    LoginComponent,
+    MainmenuComponent,
+    MobilemenuComponent,
     ModalegresoComponent,
     ModalingresoComponent,
     ModalnewcategoryComponent,
     ModalcategorylistComponent,
-    CurrencyselectorComponent,
-
+    ModalwelcomeComponent,
+    SiderightComponent,
+    SignupComponent,
+    TopbarComponent,
+    WrapperComponent,
   ],
   imports: [
     // SweetAlert2Module.forRoot(),
